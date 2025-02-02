@@ -1,0 +1,49 @@
+.product-card {
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+
+@media (min-width: 640px) {
+  .product-card {
+    max-width: 300px;
+  }
+}
+.card {
+    height: 344px; /* Example for larger screens */
+    transition: height 0.3s ease; /* Smooth transition on resize */
+}
+
+/* For tablets or small desktops */
+@media (max-width: 1024px) {
+    .card {
+        height: 280px; /* Adjust the height for medium screens */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .card {
+        height: 190px; /* Adjust the height for small screens */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    .card {
+        height: 150px; /* Minimum height for very small devices */
+    }
+}
+
+.home{
+   background-image: url("https://img.freepik.com/free-vector/gradient-white-monochrome-background_23-2149017048.jpg?ga=GA1.1.1136005002.1726668034&semt=ais_hybrid");
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 200%;
+    margin: 0; /*https://img.freepik.com/premium-photo/photo-cosmetic-products-black-white-packaging_1235950-26549.jpg Remove default margin */
+    padding-bottom: 2px;
+    /* object-fit:fill; */
+    background-size: cover;
+    background-position: center;
+   
+}
